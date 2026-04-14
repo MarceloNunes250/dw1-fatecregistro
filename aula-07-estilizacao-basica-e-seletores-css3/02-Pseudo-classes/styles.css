@@ -31,40 +31,48 @@ h2 {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
+/* Pseudo-classes - adidiona funcionalidades aos seletores */
 .caixa:hover {
-    background-color: #c300ff;
-    color: #ffffff;
+    background-color: #8cc9e4;
+    color: #30302e;
     transform: scale(0.9);
-    box-shadow: 0 8px 16px rgb(0, 255, 21)
-}
-.caixa2 { 
-    width: 80px;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    padding: 80px;
-    text-align: center;
-    
-    border-radius: 9px;
-    margin-bottom: 20px;
-    transition: all 0.3 ease;
+    box-shadow: 0 8px 16px rgb(140, 201, 228, 0.5)
 }
 
-.caixa2:hover {
-    background-color: rgb(9, 255, 0);
-    color: #000000;
-    transform: scale(1);
-    box-shadow: 0 8px 16px green;
+.btn-download{
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer
+}
+.btn-download:hover {
+    background-color: #2f7533;
 }
 
-.caixa3 {
-    width: 80px;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    padding: 80px;
-    text-align: center;
-    border-radius: 9px;
-    margin-bottom: 20px;
-    transition: all 0.3 ease;
+ /* :active */
+ .btn-download:active{
+    background-color: #dc5252;
+    transform: scale(0.95);
+ }
+
+/* :focus */
+input {
+    /* Largura maxima do elemento */
+max-width: 400px;
+padding: 12px;
+border: 2px solid #555555;
+border-radius: 5px;
+background-color: #3a3a38;
+color: white;
+font-size: 16px;
 }
 
+input:focus {
+    outline: none;
+    border-color: #8cc9e4;
+    box-shadow: 0 0 10px rgba(140, 201, 228, 0.5);
+    background-color: #252523;
+}
