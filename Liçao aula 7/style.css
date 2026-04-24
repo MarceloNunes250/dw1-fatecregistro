@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: darkgreen;
+}
+
+#sobre {
+    color: purple;
+}
+
+.lista {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.lista li {
+    color: blue;
+}
+
+.habilidade {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+h4 {
+    color: darkred;
+}
+
+.habilidade p {
+    font-family: Courier;
+}
+
+.habilidade:hover {
+    background-color: #ddd;
+}
+
+h4::after {
+    content: " ⭐";
+}
+
+input[type="email"] {
+    border: 2px solid green;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer p + .extra {
+    color: yellow;
+}
